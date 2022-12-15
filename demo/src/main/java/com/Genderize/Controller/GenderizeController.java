@@ -52,8 +52,8 @@ public class GenderizeController {
 	        return new ResponseEntity<>(byId,HttpStatus.OK);
 	    }
 
-	    @GetMapping("/get/by/name")
-	    public ResponseEntity<Genderize> getByName(@RequestParam String name)
+	    @GetMapping("/get/by/name/{name}")
+	    public ResponseEntity<Genderize> getByName(@PathVariable String name)
 	    {
 	        Genderize byName = this.service.getByName(name);
 	        return new ResponseEntity<>(byName,HttpStatus.OK);
