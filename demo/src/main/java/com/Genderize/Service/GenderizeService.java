@@ -14,7 +14,7 @@ public interface GenderizeService {
     //get by Id
     Genderize getById(Integer id);
 
-    //get by Name
+    //get by userName
     Genderize getByName(String name);
 
     void getDataFromApi();
